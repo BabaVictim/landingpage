@@ -1,0 +1,182 @@
+*{
+    font-family: Segoe WPC,Segoe UI,sans-serif;
+}
+
+.mainContainer{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+}
+
+.explorerMenu{
+    width: 350px;
+    background-color: #060621;
+    display: flex;
+    flex-direction: column;
+}
+
+.explorerText{
+    margin: 15px 0px 15px 20px;
+    color:white;
+    font-size: 0.7rem;
+}
+
+.foldersCategoryTitle{
+    background-color: #10192c;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.folderName{
+    color: white;
+    font-weight: 600;
+    font-size: 0.73rem;
+    margin: 5px;
+}
+
+.jsonSvg{
+    width: 16px;
+    height: 16px;
+}
+
+.arrowDownSVG{
+    height: 10px;
+    width: 10px;
+    margin-left: 5px;
+}
+
+.filesContainer{
+    width: 100%;
+}
+
+.fileEntry{
+    align-items: center;
+    display: flex;
+    cursor: pointer;
+    padding: 4px 2px 4px 7px;
+    gap: 3px;
+}
+
+.fileEntry:hover{
+    background-color: #061940;
+}
+
+.fileName{
+    color: white;
+    font-size: 0.75rem;
+}
+
+.mainContent{
+    background-color: #000c18;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.openFilesContainer{
+    background-color: #1c1c2a;
+    display: flex;
+    height: 42px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.openFiles{
+    height: 100%;
+    display: flex;
+}
+
+.closeVSC{
+    margin: 0;
+    height: 100%;
+    padding: 0px 25px 0px 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.closeVSC > span{
+    color: rgb(225, 225, 225);
+    font-size: 1.3rem
+}
+
+.closeVSC:hover{
+    background-color: rgb(255, 30, 30);
+}
+
+.openFile{
+    flex-grow: 1;
+    background-color: #000c18;
+    display: flex;
+    flex-direction: column;
+}
+
+.navText{
+    color: #AAAAAA;
+    font-size: 0.75rem;   
+}
+
+.navigation{
+    margin: 7px;
+    display: flex;
+    align-items: center;
+    gap: 3px;
+}
+
+.actualCodeContent{
+    display: flex;
+    flex-grow: 1;
+}
+
+textarea{
+    resize: none;
+    border: none;
+    box-sizing: border-box;
+    outline: none;
+}
+
+.lineNumbers{
+    height: 100%;
+    width: 40px;
+    text-align: center;
+    background-color: #000c18;
+    color: #326377;
+    font-family: monospace;
+}
+
+.openFileInMenu{
+    height: 100%;
+    background-color: #10192c;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3px;
+    cursor: pointer;
+    padding: 0px 10px 0px 10px;
+    height: 100%;
+}
+
+.nameInOpenFile{
+    font-size: 0.79rem;
+    color: white
+}
+
+.cancelX{
+    margin-left: 5px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: white;
+}
+
+#codeArea{
+    font-family: monospace;
+    flex-grow: 1;
+    background-color: #000c18;
+    color: white
+}
+
+.focused{
+    background-color: #000c18;
+}

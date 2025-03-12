@@ -1,0 +1,471 @@
+span{
+    cursor: default;
+}
+
+.mainContainer{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#wallpaperDiv{
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    z-index: -1;
+    background-size: cover;        
+    background-repeat: no-repeat; 
+    background-position: center;
+}
+
+.shortcutContainer{
+    flex-wrap: wrap;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 25px;
+    padding: 15px 15px 35px 15px;
+    transition: transform 0.75s ease, margin 0.75s ease;
+    width: 100%;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+}
+
+.shortcutContainer::-webkit-scrollbar {
+  height: 4px;
+}
+
+.shortcutContainer::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.shortcutContainer::-webkit-scrollbar-thumb {
+  background: var(--color-one);
+  border-radius: 2px;
+}
+
+/* Hide scrollbar arrows */
+.shortcutContainer::-webkit-scrollbar-button {
+  display: none;
+}
+
+.margin-bottom-anim{
+    margin-top: 300px;
+    opacity: 0;
+}
+
+.margin-top-anim{
+    margin-top: -200px;
+    opacity: 0;
+}
+
+.opacity-anim{
+    opacity: 0;
+}
+
+.shortcut{
+    height: 120px;
+    width: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    padding: 5px;
+    background-color: var(--shortcut);
+    border-radius: 5px;
+    transition: transform 0.15s ease, width 0.5s ease, height 0.5s ease;
+    box-shadow: 0px 10px 20px black;
+}
+
+.shortcut:hover{
+    transform: scale(1.1);
+}
+
+.shortcutImageContainer{
+    width: 100px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--color-two);
+    border-radius: 5px;
+    transition: all 0.5s ease;
+}
+
+.shortcutImageContainer > img{
+    width: 85%;
+    height: 85%;
+    border-radius: 5px;
+}
+
+.shortcutName{
+    color: var(--shortcut-font);
+    font-weight: 600;
+    font-size: 1rem;
+}
+
+.searchBarContainer{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+    padding: 25px;
+    background-color: var(--color-one);
+    border-radius: 10px;
+    box-shadow: 0px 30px 50px;
+    transition: opacity 0.65s ease;
+}
+
+.cryptoContainer{
+    background-color: var(--color-one);
+    border-radius: 10px;
+    box-shadow: 0px 30px 50px;
+    width: 550px;
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+    gap: 5px;
+    transition: margin 0.75s ease;
+}
+
+.cryptoContainerConfiguration{
+    height: 42px;
+    border-radius: 7.5px;
+    background-color: var(--color-two);
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.cryptoTitle{
+    color: var(--every-other-font);
+    font-weight: 600;
+    font-size: 1.1rem;
+    margin-left: 10px;
+}
+
+.mealPlannerContainer{
+    background-color: var(--color-one);
+    border-radius: 10px;
+    box-shadow: 0px 30px 50px;
+    height: 310px;
+    width: 540px;
+    padding: 5px;
+    transition: margin 0.75s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 5px;
+}
+
+.mealsContainer{
+    display: flex;
+    justify-content: space-between;
+    gap: 5px;
+    flex-grow: 1;
+}
+
+.menuplanTitle{
+    font-size: 1.35rem;
+    color: var(--every-other-font);
+    font-weight: 600;
+    width: calc(100% - 10px);
+    padding: 5px;
+    background-color: var(--color-two);
+    border-radius: 5px;
+    text-align: center;
+}
+
+.singleMenu{
+    border-radius: 7.5px;
+    background-color: var(--color-two);
+    flex: 1 1 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5px;
+    gap: 7px;   
+}
+
+.singleMenu > span{
+    color: var(--every-other-font);
+    text-align: center;
+    font-size: 1rem;
+}
+
+.menuName{
+    font-size: 1.2rem !important;
+    font-weight: 600;
+    height: 10% !important;
+}
+
+.menuSoup{
+    height: 22.5%;
+}
+
+.actualMenu{
+    height: 50%;
+}
+
+.timeStampOptions{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: 32%;
+}
+
+.timeStampOptions > button{
+    width: 46px;
+    background-color: var(--color-one);
+    color: var(--every-other-font);
+    border-radius: 3px;
+    border: none;
+    box-shadow: 0px 2px 10px black;
+    cursor: pointer;
+    transition: background-color .3s ease;
+}
+
+.timeStampOptions > button:hover{
+    background-color: #AAA;
+}
+
+.selectedTs{
+    background-color: #AAA !important;
+}
+
+.singleCoin{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    border-radius: 7.5px;
+    background-color: var(--color-two);
+}
+
+.singleCoin > span{
+    color: var(--every-other-font);
+    font-size: 1.15rem;
+    font-weight: 600;
+    width: 32%;
+}
+
+.profit{
+    color: rgb(69, 200, 69) !important;
+}
+
+.loss{
+    color: rgb(200, 69, 69) !important;
+}
+
+.searchForm{
+    display: flex;
+    gap: 10px;
+}
+
+.searchFormInput{
+    padding: 10px;
+    width: 500px;
+    border-radius: 10px 10px 10px 10px;
+    background-color: #DFDFDF;
+    border: none;
+    border-radius: 5px;
+}
+
+.searchLogo{
+    width: 150px;
+}
+
+.searchDecoration{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.DecorationText{
+    font-size: 4.5rem;
+    color: var(--every-other-font);
+    font-weight: 600;
+    font-family: 'Segoe UI', 'Helvetica Neue', 'Inter', 'Arial', sans-serif;
+}
+
+.shortcutName{
+    cursor: pointer;
+}
+
+.bottomBarContainer{
+    padding: 10px;
+    display: flex;
+    height: 350px; /* temp */
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    width: calc(100% - 20px);
+    gap: 25px;
+}
+
+.darkOrLightMode{
+    padding: 1px;
+    height: 40px;
+    width: 75px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 20px;
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    background-color: var(--color-two);
+}
+
+.colorThemeBtn{
+    cursor: pointer;
+    height: 70%;
+    aspect-ratio: 1 / 1;
+    padding: 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--color-one);
+    border-radius: 20px;
+}
+
+.colorThemeSvg{
+    height: 100%;
+}
+
+.settingsButton{
+    height: 50px;
+    width: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0px;
+    border-radius: 4px;
+    background-color: var(--color-two);
+    border: none;
+    transition: transform 0.25s ease;
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    box-shadow: 0px 5px 15px;
+}
+
+.settingsButton > svg{
+    padding: 3px;
+    transition: transform 0.25s ease;
+    border-radius: 10px;
+}
+
+.settingsButton:hover{
+    transform: scale(1.15);
+    cursor: pointer;
+}
+
+.settingsButton > svg:hover{
+    transform: rotate(90deg);
+}
+
+#showSBB:hover{
+    width: 400px;
+    height: 265px;
+    transform: scale(1);
+}
+
+#showSBB:hover > .shortcutImageContainer{
+    height: 100%;
+    width: 100%;
+}
+
+#showSBB:hover > .shortcutName{
+    opacity: 0;
+    position: absolute;
+}
+
+#sbbWidget > *{
+    color: var(--shortcut-font);
+    font-size: 1rem;
+}
+
+#showSBB:hover > .shortcutImageContainer > img{
+    opacity: 0;
+    position: absolute;
+}
+
+#sbbWidget{
+    width: 400px;
+    height: 265px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    transition: all 0s ease-in, all 1s ease-out;
+}
+
+.ssbWidget_title{
+    display: flex;
+    gap: 5px;
+    margin-top: 10px;
+}
+
+.ssbWidget_connections{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    width: 100%;
+    align-items: center;
+}
+
+.ssbWidget_connection{
+    background-color: var(--color-one);
+    width: calc(100% - 10px);
+    height: 40px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.removedWidget{
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    z-index: -999;
+}
+
+.searchRecommendations{
+    margin-top: 40px;
+    width: 510px;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    background-color: var(--color-one);
+    padding: 5px;
+    border-radius: 0px 0px 10px 10px;
+}
+
+.searchRecommendation{
+    height: 35px;
+    width: calc(100% - 5px);
+    background-color: var(--color-search);
+    opacity: 1;
+    border-radius: 10px;
+    cursor: pointer;
+    align-items: center;
+    display: flex;
+    padding-left: 5px;
+}
+
+.searchRecommendation > span{
+    color: var(--every-other-font);
+    cursor: pointer;
+    font-size: 1rem;
+}
