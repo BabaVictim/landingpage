@@ -68,6 +68,7 @@ span{
 }
 
 .shortcut{
+    cursor: pointer;
     height: 120px;
     width: 100px;
     display: flex;
@@ -108,6 +109,32 @@ span{
     font-size: 1rem;
 }
 
+.middleBarContainer{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    gap: 100px;
+}
+
+/*.weatherDisplay{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--color-two);
+    border-radius: 5px;
+}
+
+.temperatureIcon{
+    width: 75%;
+}
+
+.temperatureText{
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: var(--shortcut-font)
+}*/
+
 .searchBarContainer{
     display: flex;
     justify-content: center;
@@ -125,7 +152,7 @@ span{
     background-color: var(--color-one);
     border-radius: 10px;
     box-shadow: 0px 30px 50px;
-    width: 550px;
+    width: 600px;
     display: flex;
     flex-direction: column;
     padding: 5px;
@@ -241,7 +268,8 @@ span{
 }
 
 .singleCoin{
-    width: 100%;
+    padding: 0px 15px 0px 15px;
+    width: calc(100% - 30px);
     height: 50px;
     display: flex;
     justify-content: end;
@@ -254,7 +282,7 @@ span{
     color: var(--every-other-font);
     font-size: 1.15rem;
     font-weight: 600;
-    width: 32%;
+    width: 25%;
 }
 
 .profit{
@@ -371,6 +399,53 @@ span{
 
 .settingsButton > svg:hover{
     transform: rotate(90deg);
+}
+
+#sexyWebConsole:hover > .shortcutImageContainer > img{
+    opacity: 0;
+    position: absolute;
+}
+
+#sexyWebConsole:hover{
+    width: 400px;
+    height: 265px;
+    transform: scale(1);
+}
+
+#sexyWebConsole:hover > .shortcutImageContainer{
+    height: 100%;
+    width: 100%;
+}
+
+#sexyWebConsole:hover > .shortcutName{
+    opacity: 0;
+    position: absolute;
+}
+
+#sexyWebConsole > *{
+    color: var(--shortcut-font);
+    font-size: 1rem;
+}
+
+#webConsoleWidget{
+    width: 400px;
+    height: 265px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    transition: all 0s ease-in, all 0.1s ease-out;
+}
+
+.test{
+    transition: all 2s ease !important;
+}
+
+.webconsoleIframe{
+    width: 100%;
+    height: 100%;
+    border: none;
+    border-radius: 5px;
 }
 
 #showSBB:hover{

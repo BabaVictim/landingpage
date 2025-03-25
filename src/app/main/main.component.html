@@ -1,7 +1,7 @@
 <main class="mainContainer">
     <!-- Top Bar/ Shortcuts -->
     <div id="shortcutContainer" class="shortcutContainer margin-top-anim" (wheel)="sidewaysScroll($event)">
-        <a class="shortcut" *ngFor="let shortcut of shortcuts" href="{{shortcut.href}}" [id]="shortcut.function ?? ''">
+        <a class="shortcut" *ngFor="let shortcut of shortcuts" [attr.href]="shortcut.href ? shortcut.href : null" [id]="shortcut.function ?? ''">
             <div class="shortcutImageContainer">
                 <img src="{{shortcut.icon}}">
             </div>
@@ -10,23 +10,27 @@
     </div>
 
     <!-- Middle Bar/ Search container -->
-    <div id="searchBarContainer" class="searchBarContainer opacity-anim">
-        <div class="searchDecoration">
-            <img *ngIf="this.theme == 'darkmode'" class="searchLogo" src="assets/logo.png">
-            <img *ngIf="this.theme == 'lightmode'" class="searchLogo" src="assets/logo_light_mode.png">
-            <span class="DecorationText">Google</span>
-        </div>
-        <form class="searchForm" action="https://www.google.com/search" method="get">
-            <input (input)="getSearchRecommendations($event)" class="searchFormInput" type="text" name="q" placeholder="Search..." id="mainInputField" autocomplete="off" (blur)="showRecommendations = true" (focus)="showRecommendations = true" [(ngModel)]="searchQuery">
-            <div class="searchRecommendations" *ngIf="searchRecommendations.length != 0 && showRecommendations">
-                <div *ngFor="let searchRecommendation of searchRecommendations" class="searchRecommendation" (click)="submitRecommendation(searchRecommendation)">
-                    <span>{{searchRecommendation}}</span>
-                </div>
+    <div class="middleBarContainer">
+        <!--div class="weatherDisplay otherDiv">
+            <img class="temperatureIcon" [src]="'assets/weather/' + temperatureIcon">
+            <span class="temperatureText">{{temperature}}</span>
+        </div-->
+        <div id="searchBarContainer" class="searchBarContainer opacity-anim">
+            <div class="searchDecoration">
+                <img *ngIf="this.theme == 'darkmode'" class="searchLogo" src="assets/logo.png">
+                <img *ngIf="this.theme == 'lightmode'" class="searchLogo" src="assets/logo_light_mode.png">
+                <span class="DecorationText">Google</span>
             </div>
-        </form>
-
+            <form class="searchForm" action="https://www.google.com/search" method="get">
+                <input (input)="getSearchRecommendations($event)" class="searchFormInput" type="text" name="q" placeholder="Search..." id="mainInputField" autocomplete="off" (blur)="showRecommendations = true" (focus)="showRecommendations = true" [(ngModel)]="searchQuery">
+                <div class="searchRecommendations" *ngIf="searchRecommendations.length != 0 && showRecommendations">
+                    <div *ngFor="let searchRecommendation of searchRecommendations" class="searchRecommendation" (click)="submitRecommendation(searchRecommendation)">
+                        <span>{{searchRecommendation}}</span>
+                    </div>
+                </div>
+            </form>
+        </div>
     </div>
-
     <!-- Bottom Bar/ Widgets -->
     <div class="bottomBarContainer">
         <div id="cryptoContainer" class="cryptoContainer margin-bottom-anim" *ngIf="this.coins.length > 0">
@@ -43,6 +47,7 @@
                 <span>${{coin.price}}</span>
                 <span *ngIf="coin.change > 0" class="profit">+{{coin.change}}% ({{selectedSpan}})</span>
                 <span *ngIf="coin.change < 0" class="loss">{{coin.change}}% ({{selectedSpan}})</span>
+                <span>${{coin.amount}}</span>
             </div>
         </div>
         <div id="mealPlannerContainer" class="mealPlannerContainer margin-bottom-anim" *ngIf="this.menus.length > 0">
@@ -91,6 +96,10 @@
             <span>--> {{connection?.to?.arrival?.substring(11, 16)}}</span>
         </div>
     </div>
+</div>
+
+<div id="webConsoleWidget" class="removedWidget">
+    <iframe id="webConsoleIframeId" class="webconsoleIframe" src="/webconsole/index.html"></iframe>
 </div>
 
 <!-- Wallpaper -->
