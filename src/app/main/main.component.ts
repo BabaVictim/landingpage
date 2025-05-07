@@ -26,7 +26,7 @@ export class MainComponent {
   config: any
   selectedSpan: string = "24h"
   menus: Array<any> = []
-  exampleSettings: any = [{ "name": "wallpaper.json", "content": "{\n  \"urls\": [\n    \"assets/wallpapers/1.jpg\",\n    \"assets/wallpapers/2.jpg\",\n    \"assets/wallpapers/3.jpg\",\n    \"assets/wallpapers/4.jpg\",\n    \"assets/wallpapers/5.jpg\",\n    \"assets/wallpapers/6.jpg\",\n    \"assets/wallpapers/7.jpg\",\n    \"assets/wallpapers/8.jpg\",\n    \"assets/wallpapers/9.jpg\",\n    \"assets/wallpapers/10.jpg\",\n    \"assets/wallpapers/11.jpg\",\n    \"assets/wallpapers/12.jpg\",\n    \"assets/wallpapers/13.jpg\",\n    \"assets/wallpapers/14.jpg\",\n    \"assets/wallpapers/15.jpg\",\n    \"assets/wallpapers/16.jpg\",\n    \"assets/wallpapers/17.jpg\",\n    \"assets/wallpapers/18.jpg\",\n    \"assets/wallpapers/19.jpg\",\n    \"assets/wallpapers/20.jpg\",\n    \"assets/wallpapers/21.jpg\",\n    \"assets/wallpapers/22.jpg\",\n    \"assets/wallpapers/23.jpg\",\n    \"assets/wallpapers/24.jpg\",\n    \"assets/wallpapers/25.jpg\",\n    \"assets/wallpapers/26.jpg\",\n    \"assets/wallpapers/27.jpg\",\n    \"assets/wallpapers/28.jpg\",\n    \"assets/wallpapers/29.jpg\",\n    \"assets/wallpapers/30.jpg\",\n    \"assets/wallpapers/31.jpg\",\n    \"assets/wallpapers/32.jpg\",\n    \"assets/wallpapers/33.jpg\",\n    \"assets/wallpapers/34.jpg\",\n    \"assets/wallpapers/35.jpg\",\n    \"assets/wallpapers/36.jpg\",\n    \"assets/wallpapers/37.jpg\",\n    \"assets/wallpapers/38.jpg\",\n    \"assets/wallpapers/39.jpg\",\n    \"assets/wallpapers/40.jpg\"\n  ],\n  \"blur\": 0\n}" }, { "name": "shortcuts.json", "content": "[\n  {\n    \"name\": \"Dev\",\n    \"href\": \"https://psidevelop.service-now.com/\",\n    \"icon\": \"assets/shortcutImages/PSI-Logo-Dev.png\"\n  },\n  {\n    \"name\": \"Prod\",\n    \"href\": \"https://psi.service-now.com/\",\n    \"icon\": \"assets/shortcutImages/PSI-Logo-Prod.png\"\n  },\n  {\n    \"name\": \"Test\",\n    \"href\": \"https://psitest.service-now.com/\",\n    \"icon\": \"assets/shortcutImages/PSI-Logo-Test.png\"\n  },\n  {\n    \"name\": \"ChatGPT\",\n    \"href\": \"https://chatgpt.com/\",\n    \"icon\": \"assets/shortcutImages/chatGpt.png\"\n  },\n  {\n    \"name\": \"Copilot\",\n    \"href\": \"https://copilot.cloud.microsoft/\",\n    \"icon\": \"https://img.icons8.com/fluent/512/microsoft-copilot.png\"\n  },\n  {\n    \"name\": \"HL Jira\",\n    \"href\": \"https://psich.atlassian.net/jira/software/projects/HL/boards/211\",\n    \"icon\": \"https://cdn.worldvectorlogo.com/logos/jira-1.svg\"\n  },\n  {\n    \"name\": \"DeepSeek\",\n    \"href\": \"https://chat.deepseek.com/\",\n    \"icon\": \"https://registry.npmmirror.com/@lobehub/icons-static-png/latest/files/dark/deepseek-color.png\"\n  },\n  {\n    \"name\": \"Time\",\n    \"href\": \"https://ps4-psi.itesys.ch/sap/bc/ui5_ui5/ui2/ushell/shells/abap/FioriLaunchpad.html/?sap-client=100&sap-language=DE#Launchpad-openFLPPage?pageId=Z_HCM_PERSONELLES_ALL&spaceId=Z_MITARBEITER_BASIS\",\n    \"icon\": \"assets/shortcutImages/sap-time.png\"\n  },\n  {\n    \"name\": \"SBB\",\n    \"href\": \"https://sbb.ch/\",\n    \"icon\": \"assets/shortcutImages/sbb.png\",\n    \"function\": \"showSBB\"\n  },\n  {\n    \"name\": \"Intranet\",\n    \"href\": \"https://intranet.psi.ch/\",\n    \"icon\": \"assets/shortcutImages/PSI-Logo.png\"\n  },\n  {\n    \"name\": \"Angular\",\n    \"href\": \"http://localhost:4200/\",\n    \"icon\": \"https://seeklogo.com/images/A/angular-icon-logo-5FC0C40EAC-seeklogo.com.png\"\n  },\n  {\n    \"name\": \"Web Console\",\n    \"href\": \"/webconsole/index.html\",\n    \"icon\": \"https://winaero.com/blog/wp-content/uploads/2019/06/WIndows-Terminal-icon.png\",\n\"function\": \"sexyWebConsole\"\n  }\n]" }, { "name": "cryptoCoins.json", "content": "[\n  \"bonk-bonk\",\n  \"btc-bitcoin\",\n  \"sol-solana\",\n  \"ltc-litecoin\",\n  \"bnb-binance-coin\"\n]" }, { "name": "sbbStation.json", "content": "{\n  \"from\": \"psi ost\",\n  \"to\": \"lenzburg\"\n}" }, { "name": "weather.json", "content": "{}" }]
+  exampleSettings: any = [{"name":"wallpaper.json","content":"{\n  \"urls\": [\n    \"assets/wallpapers/1.jpg\",\n    \"assets/wallpapers/2.jpg\",\n    \"assets/wallpapers/3.jpg\",\n    \"assets/wallpapers/4.jpg\",\n    \"assets/wallpapers/5.jpg\",\n    \"assets/wallpapers/6.jpg\",\n    \"assets/wallpapers/7.jpg\",\n    \"assets/wallpapers/8.jpg\",\n    \"assets/wallpapers/9.jpg\",\n    \"assets/wallpapers/10.jpg\",\n    \"assets/wallpapers/11.jpg\",\n    \"assets/wallpapers/12.jpg\",\n    \"assets/wallpapers/13.jpg\",\n    \"assets/wallpapers/14.jpg\",\n    \"assets/wallpapers/15.jpg\",\n    \"assets/wallpapers/16.jpg\",\n    \"assets/wallpapers/17.jpg\",\n    \"assets/wallpapers/18.jpg\",\n    \"assets/wallpapers/19.jpg\",\n    \"assets/wallpapers/20.jpg\",\n    \"assets/wallpapers/21.jpg\",\n    \"assets/wallpapers/22.jpg\",\n    \"assets/wallpapers/23.jpg\",\n    \"assets/wallpapers/24.jpg\",\n    \"assets/wallpapers/25.jpg\",\n    \"assets/wallpapers/26.jpg\",\n    \"assets/wallpapers/27.jpg\",\n    \"assets/wallpapers/28.jpg\",\n    \"assets/wallpapers/29.jpg\",\n    \"assets/wallpapers/30.jpg\",\n    \"assets/wallpapers/31.jpg\",\n    \"assets/wallpapers/32.jpg\",\n    \"assets/wallpapers/33.jpg\",\n    \"assets/wallpapers/34.jpg\",\n    \"assets/wallpapers/35.jpg\",\n    \"assets/wallpapers/36.jpg\",\n    \"assets/wallpapers/37.jpg\",\n    \"assets/wallpapers/38.jpg\",\n    \"assets/wallpapers/39.jpg\",\n    \"assets/wallpapers/40.jpg\"\n  ],\n  \"blur\": 0\n}"},{"name":"shortcuts.json","content":"[\n  {\n    \"name\": \"SBB\",\n    \"href\": \"https://sbb.ch/\",\n    \"icon\": \"assets/shortcutImages/sbb.png\"\n  },\n  {\n    \"name\": \"WhatsApp\",\n    \"href\": \"https://web.whatsapp.com\",\n    \"icon\": \"https://static-00.iconduck.com/assets.00/whatsapp-icon-2040x2048-8b5th74o.png\"\n  }\n]"},{"name":"cryptoCoins.json","content":"[\n  {\n    \"name\": \"btc-bitcoin\",\n    \"holding\": 0\n  },\n  {\n    \"name\": \"eth-ethereum\",\n    \"holding\": 0\n  },\n  {\n    \"name\": \"xrp-xrp\",\n    \"holding\": 0\n  }\n]"},{"name":"sbbStation.json","content":"{\n  \"from\": \"zürich\",\n  \"to\": \"brugg\"\n}"},{"name":"showMenuplan.json","content":"true"}]
   colorThemes: Array<any> = [{ "name": "darkmode", "set": [{ "name": "--color-one", "color": "rgba(30,30,30,0.75)" }, { "name": "--color-two", "color": "rgba(40,40,40,0.9)" }, { "name": "--color-search", "color": "rgba(40,40,40)" }, { "name": "--shortcut-font", "color": "rgb(255,255,255)" }, { "name": "--shortcut", "color": "rgba(30,30,30,0.75)" }, { "name": "--every-other-font", "color": "rgb(240,240,240)" }] }, { "name": "lightmode", "set": [{ "name": "--color-one", "color": "rgba(240,240,240,0.75)" }, { "name": "--color-two", "color": "rgba(230,230,230,0.9)" }, { "name": "--color-search", "color": "rgba(230,230,230)" }, { "name": "--shortcut-font", "color": "rgb(17,17,17)" }, { "name": "--shortcut", "color": "rgba(102,102,102,0.75)" }, { "name": "--every-other-font", "color": "rgb(0,0,0)" }] }]
 
   async ngOnInit() {
@@ -65,41 +65,45 @@ export class MainComponent {
   }
 
   async loadSBBFunction() {
-    let SBBSettings = this.getSettings('sbbStation.json')
-    if (SBBSettings == 'error') return
-    this.sbbData = await (await fetch(`https://transport.opendata.ch/v1/connections?from=${SBBSettings.from}&to=${SBBSettings.to}&limit=5`)).json()
-    var targetWidget = document.getElementById('sbbWidget') as HTMLElement;
-    var targetShortcutContainer = document.getElementById('showSBB') as HTMLElement;
-    var targetShortcut = targetShortcutContainer.children[0]
-    targetShortcut?.appendChild(targetWidget)
+    try {
+      let SBBSettings = this.getSettings('sbbStation.json')
+      if (SBBSettings == 'error') return
+      this.sbbData = await (await fetch(`https://transport.opendata.ch/v1/connections?from=${SBBSettings.from}&to=${SBBSettings.to}&limit=5`)).json()
+      var targetWidget = document.getElementById('sbbWidget') as HTMLElement;
+      var targetShortcutContainer = document.getElementById('showSBB') as HTMLElement;
+      var targetShortcut = targetShortcutContainer.children[0]
+      targetShortcut?.appendChild(targetWidget)
 
-    if (targetShortcut) {
-      targetShortcut.addEventListener('mouseover', () => {
-        targetWidget.classList.remove('removedWidget')
-      });
+      if (targetShortcut) {
+        targetShortcut.addEventListener('mouseover', () => {
+          targetWidget.classList.remove('removedWidget')
+        });
 
-      targetShortcut.addEventListener('mouseout', () => {
-        targetWidget.classList.add('removedWidget')
-      });
-    }
+        targetShortcut.addEventListener('mouseout', () => {
+          targetWidget.classList.add('removedWidget')
+        });
+      }
+    } catch { }
   }
 
   async loadWebConsoleWidget() {
-    var targetWidget = document.getElementById('webConsoleWidget') as HTMLElement;
-    var targetShortcutContainer = document.getElementById('sexyWebConsole') as HTMLElement;
-    var targetShortcut = targetShortcutContainer.children[0]
+    try {
+      var targetWidget = document.getElementById('webConsoleWidget') as HTMLElement;
+      var targetShortcutContainer = document.getElementById('sexyWebConsole') as HTMLElement;
+      var targetShortcut = targetShortcutContainer.children[0]
 
-    targetShortcut?.appendChild(targetWidget)
+      targetShortcut?.appendChild(targetWidget)
 
-    if (targetShortcut) {
-      targetShortcut.addEventListener('mouseover', () => {
-        targetWidget.classList.remove('removedWidget')
-      });
+      if (targetShortcut) {
+        targetShortcut.addEventListener('mouseover', () => {
+          targetWidget.classList.remove('removedWidget')
+        });
 
-      targetShortcut.addEventListener('mouseout', () => {
-        targetWidget.classList.add('removedWidget')
-      });
-    }
+        targetShortcut.addEventListener('mouseout', () => {
+          targetWidget.classList.add('removedWidget')
+        });
+      }
+    } catch { }
   }
 
   changeCryptoTimeStamp(timestamp: string) {
@@ -135,6 +139,7 @@ export class MainComponent {
   }
 
   async loadMealPlannerAPI() {
+    if (this.getSettings('menuplan.json') == false) return
     let menusNeeded = ["menuOneLunch", "menuTwoLunch", "vegiLunch"]
     let res = await fetch("https://api.psi.ch/mealplanner/data")
     let data = await res.json()
