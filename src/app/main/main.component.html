@@ -11,6 +11,7 @@
 
     <!-- Middle Bar/ Search container -->
     <div class="middleBarContainer">
+          
         <!--div class="weatherDisplay otherDiv">
             <img class="temperatureIcon" [src]="'assets/weather/' + temperatureIcon">
             <span class="temperatureText">{{temperature}}</span>
@@ -35,12 +36,12 @@
     <div class="bottomBarContainer">
         <div id="cryptoContainer" class="cryptoContainer margin-bottom-anim" *ngIf="this.coins.length > 0">
             <div class="cryptoContainerConfiguration">
+                <span class="cryptoTitle">Crypto halt eif</span>
                 <div class="timeStampOptions">
                     <button (click)="changeCryptoTimeStamp('24h')" [ngClass]="{'selectedTs': selectedSpan == '24h'}">24h</button>
                     <button (click)="changeCryptoTimeStamp('7d')" [ngClass]="{'selectedTs': selectedSpan == '7d'}">7d</button>
                     <button (click)="changeCryptoTimeStamp('30d')" [ngClass]="{'selectedTs': selectedSpan == '30d'}">30d</button>
                 </div>
-                <span class="cryptoTitle">Crypto halt eif</span>
             </div>
             <div *ngFor="let coin of this.coins" class="singleCoin">
                 <span>{{coin.name}}</span>

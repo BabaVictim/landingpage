@@ -14,7 +14,6 @@ export class MainComponent {
 
   constructor(private renderer: Renderer2) { }
 
-  webConsoleUrl: String = ""
   temperatureIcon: String = "normal.png"
   temperature: String = "loading.."
   searchQuery: string = ''
@@ -108,7 +107,7 @@ export class MainComponent {
     for (let coin of this.coins) {
       coin.change = coin["change" + timestamp]
     }
-    this.coins.sort((a, b) => Number(b.change) - Number(a.change));
+    this.coins.sort((a, b) => (b.amount - a.amount) || (b.change - a.change));
   }
 
   getSettings(settings: string) {
@@ -190,7 +189,7 @@ export class MainComponent {
         })
       }
       setTimeout(() => {
-        this.coins.sort((a, b) => Number(b.change) - Number(a.change));
+        this.coins.sort((a, b) => (b.amount - a.amount) || (b.change - a.change));
         document.getElementById('cryptoContainer')?.classList.remove('margin-bottom-anim')
       }, 50);
     }
