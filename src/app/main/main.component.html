@@ -22,7 +22,7 @@
                 <img *ngIf="this.theme == 'lightmode'" class="searchLogo" src="assets/logo_light_mode.png">
                 <span class="DecorationText">Google</span>
             </div>
-            <form class="searchForm" action="https://www.google.com/search" method="get">
+            <form class="searchForm" (ngSubmit)="onSubmit()" action="https://www.google.com/search" method="get">
                 <input (input)="getSearchRecommendations($event)" class="searchFormInput" type="text" name="q" placeholder="Search..." id="mainInputField" autocomplete="off" (blur)="showRecommendations = true" (focus)="showRecommendations = true" [(ngModel)]="searchQuery">
                 <div class="searchRecommendations" *ngIf="searchRecommendations.length != 0 && showRecommendations">
                     <div *ngFor="let searchRecommendation of searchRecommendations" class="searchRecommendation" (click)="submitRecommendation(searchRecommendation)">
@@ -44,7 +44,7 @@
                 </div>
             </div>
             <div *ngFor="let coin of this.coins" class="singleCoin">
-                <span>{{coin.name}}</span>
+                <span>{{coin.name.split(' ')[0]}}</span>
                 <span>${{coin.price}}</span>
                 <span *ngIf="coin.change > 0" class="profit">+{{coin.change}}% ({{selectedSpan}})</span>
                 <span *ngIf="coin.change < 0" class="loss">{{coin.change}}% ({{selectedSpan}})</span>
