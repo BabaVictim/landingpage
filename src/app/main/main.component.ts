@@ -139,7 +139,7 @@ export class MainComponent {
   }
 
   async loadMealPlannerAPI() {
-    if (this.getSettings('menuplan.json') == false) return
+    if (this.getSettings('showMenuplan.json') == false) return
     let menusNeeded = ["menuOneLunch", "menuTwoLunch", "vegiLunch"]
     let res = await fetch("https://api.psi.ch/mealplanner/data")
     let data = await res.json()
