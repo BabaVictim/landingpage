@@ -46,8 +46,9 @@
             <div *ngFor="let coin of this.coins" class="singleCoin">
                 <span>{{coin.name.split(' ')[0]}}</span>
                 <span>${{coin.price}}</span>
-                <span *ngIf="coin.change > 0" class="profit">+{{coin.change}}% ({{selectedSpan}})</span>
-                <span *ngIf="coin.change < 0" class="loss">{{coin.change}}% ({{selectedSpan}})</span>
+                <span *ngIf="coin.change > 0" class="profit">+{{coin.change.toFixed(2)}}% ({{selectedSpan}})</span>
+                <span *ngIf="coin.change == 0" class="profit">+{{coin.change.toFixed(2)}}% ({{selectedSpan}})</span>
+                <span *ngIf="coin.change < 0" class="loss">{{coin.change.toFixed(2)}}% ({{selectedSpan}})</span>
                 <span>${{coin.amount}}</span>
             </div>
         </div>
